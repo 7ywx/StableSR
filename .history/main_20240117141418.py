@@ -731,8 +731,8 @@ if __name__ == "__main__":
 
     # signal.signal(signal.SIGUSR1, melk)
     # signal.signal(signal.SIGUSR2, divein)
-    signal.signal(signal.SIGTERM, melk)
-    signal.signal(signal.SIGTERM, divein)
+    signal.signal(signal.SIGUSRM, melk)
+    signal.signal(signal.SIGUSRM, divein)
 
     # run
     if opt.train:
